@@ -303,7 +303,7 @@ func main() {
 	fmt.Println("\n=== Performing Edits ===")
 
 	// Change paragraph styles (use actual style names from your document)
-	styleChanges := editor.ChangeParagraphStyle("P1", "P2") // Use real style names
+	styleChanges := editor.ChangeParagraphStyle("Text_20_body", "Body") // Use real style names
 	fmt.Printf("Changed %d elements style\n", styleChanges)
 
 	// Replace text
@@ -311,7 +311,7 @@ func main() {
 	fmt.Printf("Replaced text in %d locations\n", textChanges)
 
 	// Add a new paragraph
-	editor.AddParagraph("This paragraph was added by the Go editor.", "Standard")
+	editor.AddParagraph("This paragraph was added by the Go editor.", "Body")
 	fmt.Println("Added a new paragraph")
 
 	// Save the modified document
