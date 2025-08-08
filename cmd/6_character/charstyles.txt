@@ -1,0 +1,6 @@
+#Direct formatting type, Character style
+Bold,Bold
+Bold Italic,BoldItalic
+Italic,Italic
+Superscript,Superscript
+Subscript,Subscript

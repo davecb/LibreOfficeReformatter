@@ -1,0 +1,431 @@
+package main
+
+import (
+	"archive/zip"
+	"encoding/xml"
+	"fmt"
+	"io"
+	"log"
+	"os"
+	"strings"
+)
+
+// XML structure definitions for ODT documents
+type OfficeDocument struct {
+	XMLName xml.Name `xml:"document-content"`
+	Body    Body     `xml:"body"`
+}
+
+type Body struct {
+	Text TextBody `xml:"text"`
+}
+
+type TextBody struct {
+	Paragraphs []Paragraph `xml:"p"`
+	Headers    []Header    `xml:"h"`
+	Lists      []List      `xml:"list"`
+	Tables     []Table     `xml:"table"`
+}
+
+type Paragraph struct {
+	StyleName string `xml:"style-name,attr"`
+	Text      string `xml:",chardata"`
+	Spans     []Span `xml:"span"`
+	Links     []Link `xml:"a"`
+}
+
+type Span struct {
+	StyleName string `xml:"style-name,attr"`
+	Text      string `xml:",chardata"`
+}
+
+type Link struct {
+	Href string `xml:"href,attr"`
+	Text string `xml:",chardata"`
+}
+
+type Header struct {
+	Level     int    `xml:"outline-level,attr"`
+	StyleName string `xml:"style-name,attr"`
+	Text      string `xml:",chardata"`
+	Spans     []Span `xml:"span"`
+}
+
+type List struct {
+	Items []ListItem `xml:"list-item"`
+}
+
+type ListItem struct {
+	Paragraphs []Paragraph `xml:"p"`
+}
+
+type Table struct {
+	Name    string     `xml:"name,attr"`
+	Columns []Column   `xml:"table-column"`
+	Rows    []TableRow `xml:"table-row"`
+}
+
+type Column struct {
+	StyleName string `xml:"style-name,attr"`
+}
+
+type TableRow struct {
+	Cells []TableCell `xml:"table-cell"`
+}
+
+type TableCell struct {
+	ValueType  string      `xml:"value-type,attr"`
+	Value      string      `xml:"value,attr"`
+	Paragraphs []Paragraph `xml:"p"`
+}
+
+// ODT Editor struct to hold document and operations
+type ODTEditor struct {
+	filename string
+	document *OfficeDocument
+	reader   *zip.ReadCloser
+}
+
+// Create a new ODT editor
+func NewODTEditor(filename string) (*ODTEditor, error) {
+	editor := &ODTEditor{filename: filename}
+
+	if err := editor.load(); err != nil {
+		return nil, err
+	}
+
+	return editor, nil
+}
+
+// Load the ODT document
+func (e *ODTEditor) load() error {
+	reader, err := zip.OpenReader(e.filename)
+	if err != nil {
+		return fmt.Errorf("error opening ODT file: %v", err)
+	}
+	e.reader = reader
+
+	// Extract content.xml
+	contentXML, err := e.extractFileFromZip("content.xml")
+	if err != nil {
+		return fmt.Errorf("error extracting content.xml: %v", err)
+	}
+
+	// Parse the XML content
+	var doc OfficeDocument
+	if err := xml.Unmarshal(contentXML, &doc); err != nil {
+		return fmt.Errorf("error parsing content.xml: %v", err)
+	}
+
+	e.document = &doc
+	return nil
+}
+
+// Close the editor and cleanup resources
+func (e *ODTEditor) Close() {
+	if e.reader != nil {
+		e.reader.Close()
+	}
+}
+
+// Extract a file from the ZIP archive
+func (e *ODTEditor) extractFileFromZip(filename string) ([]byte, error) {
+	for _, file := range e.reader.File {
+		if file.Name == filename {
+			rc, err := file.Open()
+			if err != nil {
+				return nil, err
+			}
+			defer rc.Close()
+
+			data, err := io.ReadAll(rc)
+			if err != nil {
+				return nil, err
+			}
+			return data, nil
+		}
+	}
+	return nil, fmt.Errorf("file %s not found in archive", filename)
+}
+
+// Get all paragraphs from the document
+func (e *ODTEditor) GetParagraphs() []Paragraph {
+	return e.document.Body.Text.Paragraphs
+}
+
+// Get all headers from the document
+func (e *ODTEditor) GetHeaders() []Header {
+	return e.document.Body.Text.Headers
+}
+
+// Change paragraph style
+func (e *ODTEditor) ChangeParagraphStyle(fromStyle, toStyle string) int {
+	changedCount := 0
+
+	// Change paragraph styles
+	for i := range e.document.Body.Text.Paragraphs {
+		if e.document.Body.Text.Paragraphs[i].StyleName == fromStyle {
+			e.document.Body.Text.Paragraphs[i].StyleName = toStyle
+			changedCount++
+		}
+	}
+
+	// Change header styles
+	for i := range e.document.Body.Text.Headers {
+		if e.document.Body.Text.Headers[i].StyleName == fromStyle {
+			e.document.Body.Text.Headers[i].StyleName = toStyle
+			changedCount++
+		}
+	}
+
+	// Change table cell paragraph styles
+	for i := range e.document.Body.Text.Tables {
+		for j := range e.document.Body.Text.Tables[i].Rows {
+			for k := range e.document.Body.Text.Tables[i].Rows[j].Cells {
+				for l := range e.document.Body.Text.Tables[i].Rows[j].Cells[k].Paragraphs {
+					if e.document.Body.Text.Tables[i].Rows[j].Cells[k].Paragraphs[l].StyleName == fromStyle {
+						e.document.Body.Text.Tables[i].Rows[j].Cells[k].Paragraphs[l].StyleName = toStyle
+						changedCount++
+					}
+				}
+			}
+		}
+	}
+
+	return changedCount
+}
+
+// Replace text in paragraphs
+func (e *ODTEditor) ReplaceText(oldText, newText string) int {
+	changedCount := 0
+
+	// Replace in paragraphs
+	for i := range e.document.Body.Text.Paragraphs {
+		if strings.Contains(e.document.Body.Text.Paragraphs[i].Text, oldText) {
+			e.document.Body.Text.Paragraphs[i].Text = strings.ReplaceAll(
+				e.document.Body.Text.Paragraphs[i].Text, oldText, newText)
+			changedCount++
+		}
+
+		// Replace in spans within paragraphs
+		for j := range e.document.Body.Text.Paragraphs[i].Spans {
+			if strings.Contains(e.document.Body.Text.Paragraphs[i].Spans[j].Text, oldText) {
+				e.document.Body.Text.Paragraphs[i].Spans[j].Text = strings.ReplaceAll(
+					e.document.Body.Text.Paragraphs[i].Spans[j].Text, oldText, newText)
+				changedCount++
+			}
+		}
+	}
+
+	// Replace in headers
+	for i := range e.document.Body.Text.Headers {
+		if strings.Contains(e.document.Body.Text.Headers[i].Text, oldText) {
+			e.document.Body.Text.Headers[i].Text = strings.ReplaceAll(
+				e.document.Body.Text.Headers[i].Text, oldText, newText)
+			changedCount++
+		}
+
+		// Replace in spans within headers
+		for j := range e.document.Body.Text.Headers[i].Spans {
+			if strings.Contains(e.document.Body.Text.Headers[i].Spans[j].Text, oldText) {
+				e.document.Body.Text.Headers[i].Spans[j].Text = strings.ReplaceAll(
+					e.document.Body.Text.Headers[i].Spans[j].Text, oldText, newText)
+				changedCount++
+			}
+		}
+	}
+
+	return changedCount
+}
+
+// Add a new paragraph
+func (e *ODTEditor) AddParagraph(text, styleName string) {
+	newParagraph := Paragraph{
+		StyleName: styleName,
+		Text:      text,
+	}
+	e.document.Body.Text.Paragraphs = append(e.document.Body.Text.Paragraphs, newParagraph)
+}
+
+// Get document statistics
+func (e *ODTEditor) GetStats() map[string]int {
+	stats := make(map[string]int)
+
+	stats["paragraphs"] = len(e.document.Body.Text.Paragraphs)
+	stats["headers"] = len(e.document.Body.Text.Headers)
+	stats["tables"] = len(e.document.Body.Text.Tables)
+	stats["lists"] = len(e.document.Body.Text.Lists)
+
+	// Count words
+	wordCount := 0
+	for _, para := range e.document.Body.Text.Paragraphs {
+		wordCount += len(strings.Fields(para.Text))
+		for _, span := range para.Spans {
+			wordCount += len(strings.Fields(span.Text))
+		}
+	}
+	stats["words"] = wordCount
+
+	return stats
+}
+
+// Display document content
+func (e *ODTEditor) DisplayContent() {
+	fmt.Println("=== Document Content ===")
+
+	// Display headers
+	for i, header := range e.document.Body.Text.Headers {
+		headerText := strings.TrimSpace(header.Text)
+		for _, span := range header.Spans {
+			headerText += strings.TrimSpace(span.Text)
+		}
+		if headerText != "" {
+			fmt.Printf("Header %d (Level %d, Style: %s): %s\n",
+				i+1, header.Level, header.StyleName, headerText)
+		}
+	}
+
+	// Display paragraphs
+	for i, para := range e.document.Body.Text.Paragraphs {
+		paraText := strings.TrimSpace(para.Text)
+		for _, span := range para.Spans {
+			paraText += strings.TrimSpace(span.Text)
+		}
+		if paraText != "" {
+			fmt.Printf("Paragraph %d (Style: %s): %s\n",
+				i+1, para.StyleName, paraText)
+		}
+	}
+}
+
+// Save the modified document to a new file
+func (e *ODTEditor) SaveAs(outputFilename string) error {
+	// Create the new ODT file
+	newFile, err := os.Create(outputFilename)
+	if err != nil {
+		return fmt.Errorf("error creating new file: %v", err)
+	}
+	defer newFile.Close()
+
+	// Create a ZIP writer
+	zipWriter := zip.NewWriter(newFile)
+	defer zipWriter.Close()
+
+	// Marshal the modified content.xml
+	modifiedContentXML, err := xml.MarshalIndent(e.document, "", "  ")
+	if err != nil {
+		return fmt.Errorf("error marshaling modified content: %v", err)
+	}
+
+	// Add XML declaration
+	xmlHeader := []byte(`<?xml version="1.0" encoding="UTF-8"?>` + "\n")
+	fullContentXML := append(xmlHeader, modifiedContentXML...)
+
+	// Copy all files from original, replacing content.xml with modified version
+	for _, file := range e.reader.File {
+		if file.Name == "content.xml" {
+			// Write the modified content.xml
+			if err := e.writeFileToZip(zipWriter, "content.xml", fullContentXML); err != nil {
+				return fmt.Errorf("error writing modified content.xml: %v", err)
+			}
+		} else {
+			// Copy other files unchanged
+			if err := e.copyFileToZip(zipWriter, file); err != nil {
+				return fmt.Errorf("error copying file %s: %v", file.Name, err)
+			}
+		}
+	}
+
+	return nil
+}
+
+// Helper function to write data to a file in the ZIP archive
+func (e *ODTEditor) writeFileToZip(zipWriter *zip.Writer, filename string, data []byte) error {
+	writer, err := zipWriter.Create(filename)
+	if err != nil {
+		return err
+	}
+
+	_, err = writer.Write(data)
+	return err
+}
+
+// Helper function to copy a file from source ZIP to destination ZIP
+func (e *ODTEditor) copyFileToZip(zipWriter *zip.Writer, sourceFile *zip.File) error {
+	// Open the source file
+	sourceReader, err := sourceFile.Open()
+	if err != nil {
+		return err
+	}
+	defer sourceReader.Close()
+
+	// Create the file in the destination ZIP
+	destWriter, err := zipWriter.Create(sourceFile.Name)
+	if err != nil {
+		return err
+	}
+
+	// Copy the content
+	_, err = io.Copy(destWriter, sourceReader)
+	return err
+}
+
+// Main function demonstrating usage
+func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: go run odt_editor.go <input.odt> [output.odt]")
+		fmt.Println("Example: go run odt_editor.go document.odt document_modified.odt")
+		return
+	}
+
+	inputFile := os.Args[1]
+	outputFile := "modified_" + inputFile
+	if len(os.Args) >= 3 {
+		outputFile = os.Args[2]
+	}
+
+	// Create ODT editor
+	editor, err := NewODTEditor(inputFile)
+	if err != nil {
+		log.Fatalf("Error opening ODT file: %v", err)
+	}
+	defer editor.Close()
+
+	// Display original content
+	fmt.Println("=== Original Document ===")
+	editor.DisplayContent()
+
+	// Show statistics
+	stats := editor.GetStats()
+	fmt.Printf("\nDocument Statistics:\n")
+	for key, value := range stats {
+		fmt.Printf("  %s: %d\n", key, value)
+	}
+
+	// Perform some edits
+	fmt.Println("\n=== Performing Edits ===")
+
+	// Change paragraph styles
+	styleChanges := editor.ChangeParagraphStyle("Standard", "Heading1")
+	fmt.Printf("Changed %d elements from 'Standard' to 'Heading1' style\n", styleChanges)
+
+	// Replace text
+	textChanges := editor.ReplaceText("old text", "new text")
+	fmt.Printf("Replaced text in %d locations\n", textChanges)
+
+	//// Add a new paragraph
+	//editor.AddParagraph("This is a new paragraph added by the editor.", "Standard")
+	//fmt.Println("Added a new paragraph")
+
+	// Display modified content
+	fmt.Println("\n=== Modified Document ===")
+	editor.DisplayContent()
+
+	// Save the modified document
+	if err := editor.SaveAs(outputFile); err != nil {
+		log.Fatalf("Error saving modified document: %v", err)
+	}
+
+	fmt.Printf("\nModified document saved as: %s\n", outputFile)
+	fmt.Println("Edit completed successfully!")
+}

@@ -1,0 +1,375 @@
+package main
+/* 
+ * I'll create a Go program that demonstrates how to modify paragraph styles in an ODT file by editing the styles.xml:ODT Style Modifier in GoCode package main
+
+import (
+	"archive/zip"
+	"bytes"
+	"encoding/xml"
+	"fmt"
+	"io"
+	"log"
+	"os"
+	"strings"
+)
+
+// Style represents a paragraph style in the ODT file
+type Style struct {
+	XMLName            xml.Name           `xml:"style"`
+	Name               This Go program provides a complete solution for modifying paragraph styles in ODT files. Here's what it does:
+Key Features:
+
+ODT File Handling: Treats ODT as a ZIP archive and extracts/modifies the styles.xml file
+XML Parsing: Uses Go's encoding/xml package to parse and modify the styles structure
+Style Modification: Allows you to change properties like font-size, font-weight, color, margins, etc.
+Style Listing: Can list all available paragraph styles in the document
+
+Usage Example:
+bashgo run main.go document.odt
+How it works:
+
+Opens the ODT file as a ZIP archive
+Extracts and parses styles.xml
+Finds the target paragraph style by name
+Modifies the style properties according to your specifications
+Rebuilds the XML and repackages the ODT file
+
+Supported Modifications:
+
+font-size, font-family, font-weight, font-style, color
+margin-top, margin-bottom, text-align, line-height
+
+To use this code:
+
+Save it as main.go
+Run go mod init odt-modifier to create a Go module
+Execute with your ODT file path as an argument
+
+The program will list all paragraph styles found in the document and then modify the "Heading 1" style as an example. You can easily customize the modifications map to change different properties or target different styles.
+
+*/
+package main
+
+import (
+	"archive/zip"
+	"bytes"
+	"encoding/xml"
+	"fmt"
+	"io"
+	"log"
+	"os"
+	"strings"
+)
+
+// Style represents a paragraph style in the ODT file
+type Style struct {
+	XMLName            xml.Name           `xml:"style"`
+	Name               string             `xml:"name,attr"`
+	Family             string             `xml:"family,attr"`
+	ParentStyleName    string             `xml:"parent-style-name,attr,omitempty"`
+	ParagraphProps     *ParagraphProps    `xml:"paragraph-properties,omitempty"`
+	TextProps          *TextProps         `xml:"text-properties,omitempty"`
+}
+
+// ParagraphProps represents paragraph formatting properties
+type ParagraphProps struct {
+	XMLName      xml.Name `xml:"paragraph-properties"`
+	FontSize     string   `xml:"font-size,attr,omitempty"`
+	MarginTop    string   `xml:"margin-top,attr,omitempty"`
+	MarginBottom string   `xml:"margin-bottom,attr,omitempty"`
+	TextAlign    string   `xml:"text-align,attr,omitempty"`
+	LineHeight   string   `xml:"line-height,attr,omitempty"`
+}
+
+// TextProps represents text formatting properties
+type TextProps struct {
+	XMLName    xml.Name `xml:"text-properties"`
+	FontFamily string   `xml:"font-family,attr,omitempty"`
+	FontSize   string   `xml:"font-size,attr,omitempty"`
+	FontWeight string   `xml:"font-weight,attr,omitempty"`
+	FontStyle  string   `xml:"font-style,attr,omitempty"`
+	Color      string   `xml:"color,attr,omitempty"`
+}
+
+// StylesDocument represents the structure of styles.xml
+type StylesDocument struct {
+	XMLName xml.Name `xml:"document-styles"`
+	Styles  struct {
+		XMLName xml.Name `xml:"styles"`
+		Styles  []Style  `xml:"style"`
+	} `xml:"styles"`
+	AutomaticStyles struct {
+		XMLName xml.Name `xml:"automatic-styles"`
+		Styles  []Style  `xml:"style"`
+	} `xml:"automatic-styles"`
+}
+
+// ODTModifier handles ODT file modifications
+type ODTModifier struct {
+	filePath string
+}
+
+// NewODTModifier creates a new ODT modifier
+func NewODTModifier(filePath string) *ODTModifier {
+	return &ODTModifier{filePath: filePath}
+}
+
+// ModifyParagraphStyle modifies a specific paragraph style
+func (m *ODTModifier) ModifyParagraphStyle(styleName string, modifications map[string]string) error {
+	// Read the ODT file
+	zipReader, err := zip.OpenReader(m.filePath)
+	if err != nil {
+		return fmt.Errorf("failed to open ODT file: %w", err)
+	}
+	defer zipReader.Close()
+
+	// Create a buffer to store the modified ODT
+	var buf bytes.Buffer
+	zipWriter := zip.NewWriter(&buf)
+
+	var stylesModified bool
+
+	// Process each file in the ODT archive
+	for _, file := range zipReader.File {
+		if file.Name == "styles.xml" {
+			// Modify styles.xml
+			modifiedContent, err := m.modifyStylesXML(file, styleName, modifications)
+			if err != nil {
+				return fmt.Errorf("failed to modify styles.xml: %w", err)
+			}
+
+			// Write modified styles.xml to new archive
+			w, err := zipWriter.Create(file.Name)
+			if err != nil {
+				return fmt.Errorf("failed to create styles.xml in archive: %w", err)
+			}
+			_, err = w.Write(modifiedContent)
+			if err != nil {
+				return fmt.Errorf("failed to write modified styles.xml: %w", err)
+			}
+			stylesModified = true
+		} else {
+			// Copy other files unchanged
+			err := m.copyFileToArchive(zipWriter, file)
+			if err != nil {
+				return fmt.Errorf("failed to copy file %s: %w", file.Name, err)
+			}
+		}
+	}
+
+	if !stylesModified {
+		return fmt.Errorf("styles.xml not found in ODT file")
+	}
+
+	// Close the new archive
+	err = zipWriter.Close()
+	if err != nil {
+		return fmt.Errorf("failed to close new archive: %w", err)
+	}
+
+	// Write the modified content back to the original file
+	err = os.WriteFile(m.filePath, buf.Bytes(), 0644)
+	if err != nil {
+		return fmt.Errorf("failed to write modified ODT file: %w", err)
+	}
+
+	return nil
+}
+
+// modifyStylesXML reads and modifies the styles.xml content
+func (m *ODTModifier) modifyStylesXML(file *zip.File, styleName string, modifications map[string]string) ([]byte, error) {
+	// Open and read the styles.xml file
+	rc, err := file.Open()
+	if err != nil {
+		return nil, err
+	}
+	defer rc.Close()
+
+	content, err := io.ReadAll(rc)
+	if err != nil {
+		return nil, err
+	}
+
+	// Parse the XML
+	var stylesDoc StylesDocument
+	err = xml.Unmarshal(content, &stylesDoc)
+	if err != nil {
+		return nil, fmt.Errorf("failed to parse styles.xml: %w", err)
+	}
+
+	// Modify the target style
+	styleFound := false
+	
+	// Check in main styles
+	for i := range stylesDoc.Styles.Styles {
+		if stylesDoc.Styles.Styles[i].Name == styleName && stylesDoc.Styles.Styles[i].Family == "paragraph" {
+			m.applyModifications(&stylesDoc.Styles.Styles[i], modifications)
+			styleFound = true
+			break
+		}
+	}
+
+	// Check in automatic styles if not found in main styles
+	if !styleFound {
+		for i := range stylesDoc.AutomaticStyles.Styles {
+			if stylesDoc.AutomaticStyles.Styles[i].Name == styleName && stylesDoc.AutomaticStyles.Styles[i].Family == "paragraph" {
+				m.applyModifications(&stylesDoc.AutomaticStyles.Styles[i], modifications)
+				styleFound = true
+				break
+			}
+		}
+	}
+
+	if !styleFound {
+		return nil, fmt.Errorf("style '%s' not found", styleName)
+	}
+
+	// Marshal back to XML
+	modifiedContent, err := xml.MarshalIndent(stylesDoc, "", "  ")
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal modified XML: %w", err)
+	}
+
+	// Add XML declaration
+	xmlHeader := `<?xml version="1.0" encoding="UTF-8"?>` + "\n"
+	return append([]byte(xmlHeader), modifiedContent...), nil
+}
+
+// applyModifications applies the modifications to a style
+func (m *ODTModifier) applyModifications(style *Style, modifications map[string]string) {
+	// Initialize properties if they don't exist
+	if style.ParagraphProps == nil {
+		style.ParagraphProps = &ParagraphProps{}
+	}
+	if style.TextProps == nil {
+		style.TextProps = &TextProps{}
+	}
+
+	// Apply modifications
+	for key, value := range modifications {
+		switch strings.ToLower(key) {
+		case "font-size":
+			style.TextProps.FontSize = value
+		case "font-family":
+			style.TextProps.FontFamily = value
+		case "font-weight":
+			style.TextProps.FontWeight = value
+		case "font-style":
+			style.TextProps.FontStyle = value
+		case "color":
+			style.TextProps.Color = value
+		case "margin-top":
+			style.ParagraphProps.MarginTop = value
+		case "margin-bottom":
+			style.ParagraphProps.MarginBottom = value
+		case "text-align":
+			style.ParagraphProps.TextAlign = value
+		case "line-height":
+			style.ParagraphProps.LineHeight = value
+		}
+	}
+}
+
+// copyFileToArchive copies a file from the source archive to the destination archive
+func (m *ODTModifier) copyFileToArchive(zipWriter *zip.Writer, file *zip.File) error {
+	rc, err := file.Open()
+	if err != nil {
+		return err
+	}
+	defer rc.Close()
+
+	w, err := zipWriter.Create(file.Name)
+	if err != nil {
+		return err
+	}
+
+	_, err = io.Copy(w, rc)
+	return err
+}
+
+// ListParagraphStyles lists all paragraph styles in the ODT file
+func (m *ODTModifier) ListParagraphStyles() ([]string, error) {
+	zipReader, err := zip.OpenReader(m.filePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to open ODT file: %w", err)
+	}
+	defer zipReader.Close()
+
+	for _, file := range zipReader.File {
+		if file.Name == "styles.xml" {
+			rc, err := file.Open()
+			if err != nil {
+				return nil, err
+			}
+			defer rc.Close()
+
+			content, err := io.ReadAll(rc)
+			if err != nil {
+				return nil, err
+			}
+
+			var stylesDoc StylesDocument
+			err = xml.Unmarshal(content, &stylesDoc)
+			if err != nil {
+				return nil, fmt.Errorf("failed to parse styles.xml: %w", err)
+			}
+
+			var styleNames []string
+			
+			// Collect paragraph styles from main styles
+			for _, style := range stylesDoc.Styles.Styles {
+				if style.Family == "paragraph" {
+					styleNames = append(styleNames, style.Name)
+				}
+			}
+
+			// Collect paragraph styles from automatic styles
+			for _, style := range stylesDoc.AutomaticStyles.Styles {
+				if style.Family == "paragraph" {
+					styleNames = append(styleNames, style.Name)
+				}
+			}
+
+			return styleNames, nil
+		}
+	}
+
+	return nil, fmt.Errorf("styles.xml not found in ODT file")
+}
+
+func main() {
+	// Example usage
+	if len(os.Args) < 2 {
+		log.Fatal("Usage: go run main.go <path-to-odt-file>")
+	}
+
+	odtPath := os.Args[1]
+	modifier := NewODTModifier(odtPath)
+
+	// List all paragraph styles
+	fmt.Println("Available paragraph styles:")
+	styles, err := modifier.ListParagraphStyles()
+	if err != nil {
+		log.Fatalf("Failed to list styles: %v", err)
+	}
+	for _, style := range styles {
+		fmt.Printf("- %s\n", style)
+	}
+
+	// Example: Modify a heading style
+	modifications := map[string]string{
+		"font-size":   "18pt",
+		"font-weight": "bold",
+		"color":       "#0000FF",
+		"margin-top":  "12pt",
+	}
+
+	fmt.Println("\nModifying 'Heading 1' style...")
+	err = modifier.ModifyParagraphStyle("Heading 1", modifications)
+	if err != nil {
+		log.Fatalf("Failed to modify style: %v", err)
+	}
+
+	fmt.Println("Style modified successfully!")
+}
+

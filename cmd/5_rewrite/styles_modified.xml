@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document-styles xmlns="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:_xmlns="xmlns" _xmlns:css3t="http://www.w3.org/TR/css3-text/" _xmlns:grddl="http://www.w3.org/2003/g/data-view#" _xmlns:xhtml="http://www.w3.org/1999/xhtml" _xmlns:dom="http://www.w3.org/2001/xml-events" _xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" _xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" _xmlns:math="http://www.w3.org/1998/Math/MathML" _xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" _xmlns:ooo="http://openoffice.org/2004/office" _xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" _xmlns:ooow="http://openoffice.org/2004/writer" _xmlns:xlink="http://www.w3.org/1999/xlink" _xmlns:drawooo="http://openoffice.org/2010/draw" _xmlns:oooc="http://openoffice.org/2004/calc" _xmlns:dc="http://purl.org/dc/elements/1.1/" _xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" _xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" _xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" _xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" _xmlns:tableooo="http://openoffice.org/2009/table" _xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" _xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" _xmlns:rpt="http://openoffice.org/2005/report" _xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" _xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" _xmlns:officeooo="http://openoffice.org/2009/office" _xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" _xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" _xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" _xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" _xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:_="urn:oasis:names:tc:opendocument:xmlns:office:1.0" _:version="1.4">
+  <font-face-decls xmlns="urn:oasis:names:tc:opendocument:xmlns:office:1.0">
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__1="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __1:name="Georgia" xmlns:__2="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __2:font-family="Georgia" __1:font-family-generic="roman" __1:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__3="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __3:name="Georgia1" xmlns:__4="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __4:font-family="Georgia" __3:font-family-generic="system" __3:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__5="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __5:name="Liberation Mono" xmlns:__6="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __6:font-family="&#39;Liberation Mono&#39;" __5:font-family-generic="modern" __5:font-pitch="fixed"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__7="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __7:name="Liberation Sans" xmlns:__8="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __8:font-family="&#39;Liberation Sans&#39;" __7:font-family-generic="roman" __7:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__9="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __9:name="Liberation Sans1" xmlns:__10="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __10:font-family="&#39;Liberation Sans&#39;" __9:font-family-generic="swiss" __9:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__11="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __11:name="Liberation Sans2" xmlns:__12="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __12:font-family="&#39;Liberation Sans&#39;" __11:font-family-generic="system" __11:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__13="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __13:name="Liberation Serif" xmlns:__14="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __14:font-family="&#39;Liberation Serif&#39;" __13:font-family-generic="roman" __13:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__15="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __15:name="Liberation Serif1" xmlns:__16="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __16:font-family="&#39;Liberation Serif&#39;" __15:font-family-generic="system" __15:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__17="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __17:name="Linux Libertine G" xmlns:__18="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __18:font-family="&#39;Linux Libertine G&#39;" __17:font-family-generic="system" __17:font-pitch="variable"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__19="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __19:name="Noto Sans Mono CJK SC" xmlns:__20="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __20:font-family="&#39;Noto Sans Mono CJK SC&#39;" __19:font-family-generic="modern" __19:font-pitch="fixed"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__21="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __21:name="OpenSymbol" xmlns:__22="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __22:font-family="OpenSymbol" __21:font-charset="x-symbol"></font-face>
+    <font-face xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__23="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __23:name="Times New Roman" xmlns:__24="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __24:font-family="&#39;Times New Roman&#39;" __23:font-family-generic="roman" __23:font-pitch="variable"></font-face>
+  </font-face-decls>
+  <styles xmlns="urn:oasis:names:tc:opendocument:xmlns:office:1.0">
+    <default-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__25="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __25:family="graphic">
+      <graphic-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__26="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __26:stroke-color="#3465a4" xmlns:__27="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __27:fill-color="#729fcf" xmlns:__28="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __28:wrap-option="no-wrap" __27:shadow-offset-x="0.1181in" __27:shadow-offset-y="0.1181in" __27:start-line-spacing-horizontal="0.1114in" __27:start-line-spacing-vertical="0.1114in" __27:end-line-spacing-horizontal="0.1114in" __27:end-line-spacing-vertical="0.1114in" __25:writing-mode="lr-tb" __25:flow-with-text="false"></graphic-properties>
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __25:text-autospace="ideograph-alpha" __25:line-break="strict" xmlns:__29="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __29:tab-stop-distance="0in" __25:font-independent-line-spacing="false">
+        <tab-stops xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></tab-stops>
+      </paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __25:use-window-font-color="true" xmlns:__30="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __30:opacity="0%" __25:font-name="Liberation Serif" xmlns:__31="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __31:font-size="12pt" __31:language="en" __31:country="US" __25:letter-kerning="false" __25:font-name-asian="Liberation Serif1" __25:font-size-asian="12pt" __25:language-asian="zh" __25:country-asian="CN" __25:font-name-complex="Liberation Serif1" __25:font-size-complex="12pt" __25:language-complex="hi" __25:country-complex="IN"></text-properties>
+    </default-style>
+    <default-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__32="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __32:family="paragraph">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__33="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __33:hyphenation-ladder-count="no-limit" __33:hyphenation-keep="auto" xmlns:__34="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __34:hyphenation-keep-type="column" __32:text-autospace="ideograph-alpha" __32:punctuation-wrap="hanging" __32:line-break="strict" __32:tab-stop-distance="0.5in" __32:writing-mode="lr-tb"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __32:use-window-font-color="true" xmlns:__35="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __35:opacity="0%" __32:font-name="Liberation Serif" xmlns:__36="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __36:font-size="12pt" __36:language="en" __36:country="US" __32:letter-kerning="false" __32:font-name-asian="Liberation Serif1" __32:font-size-asian="12pt" __32:language-asian="zh" __32:country-asian="CN" __32:font-name-complex="Liberation Serif1" __32:font-size-complex="12pt" __32:language-complex="hi" __32:country-complex="IN" __36:hyphenate="false" __36:hyphenation-remain-char-count="2" __36:hyphenation-push-char-count="2" __35:hyphenation-no-caps="false" __35:hyphenation-no-last-word="false" __35:hyphenation-word-char-count="no-limit" __35:hyphenation-zone="no-limit"></text-properties>
+    </default-style>
+    <default-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__37="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __37:family="table">
+      <table-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__38="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __38:border-model="collapsing"></table-properties>
+    </default-style>
+    <default-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__39="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __39:family="table-row">
+      <table-row-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__40="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __40:keep-together="auto"></table-row-properties>
+    </default-style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__41="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __41:name="Standard" __41:family="paragraph" __41:class="text"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__42="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __42:name="Heading" __42:family="paragraph" __42:parent-style-name="Standard" __42:next-style-name="Text_20_body" __42:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__43="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __43:margin-top="0.1665in" __43:margin-bottom="0.0835in" __42:contextual-spacing="false" __43:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __42:font-name="Liberation Sans1" xmlns:__44="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __44:font-family="&#39;Liberation Sans&#39;" __42:font-family-generic="swiss" __42:font-pitch="variable" __44:font-size="14pt" __42:font-name-asian="Linux Libertine G" __42:font-family-asian="&#39;Linux Libertine G&#39;" __42:font-family-generic-asian="system" __42:font-pitch-asian="variable" __42:font-size-asian="14pt" __42:font-name-complex="Linux Libertine G" __42:font-family-complex="&#39;Linux Libertine G&#39;" __42:font-family-generic-complex="system" __42:font-pitch-complex="variable" __42:font-size-complex="14pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__45="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __45:name="Text_20_body" __45:display-name="Text body" __45:family="paragraph" __45:parent-style-name="Standard" __45:class="text">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__46="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __46:margin-top="0in" __46:margin-bottom="0.0972in" __45:contextual-spacing="false" __46:line-height="115%"></paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__47="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __47:name="List" __47:family="paragraph" __47:parent-style-name="Text_20_body" __47:class="list">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __47:font-size-asian="12pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__48="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __48:name="Caption" __48:family="paragraph" __48:parent-style-name="Standard" __48:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__49="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __49:margin-top="0.0835in" __49:margin-bottom="0.0835in" __48:contextual-spacing="false" xmlns:__50="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __50:number-lines="false" __50:line-number="0"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__51="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __51:font-size="12pt" __51:font-style="italic" __48:font-size-asian="12pt" __48:font-style-asian="italic" __48:font-size-complex="12pt" __48:font-style-complex="italic"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__52="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __52:name="Index" __52:family="paragraph" __52:parent-style-name="Standard" __52:class="index">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__53="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __53:number-lines="false" __53:line-number="0"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __52:font-size-asian="12pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__54="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __54:name="normal" __54:family="paragraph" __54:default-outline-level="">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__55="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __55:text-align="start" __54:justify-single-word="false" __55:orphans="2" __55:widows="2" __54:writing-mode="lr-tb"></paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__56="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __56:name="Heading_20_1" __56:display-name="Heading 1" __56:family="paragraph" __56:parent-style-name="normal" __56:next-style-name="Standard" __56:default-outline-level="" __56:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__57="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __57:margin-top="0.1665in" __57:margin-bottom="0.0835in" __56:contextual-spacing="false" __57:line-height="100%" __57:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __56:font-name="Liberation Serif" xmlns:__58="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __58:font-family="&#39;Liberation Serif&#39;" __56:font-family-generic="roman" __56:font-pitch="variable" __58:font-size="24pt" __58:font-weight="bold" __56:font-name-asian="Liberation Serif1" __56:font-family-asian="&#39;Liberation Serif&#39;" __56:font-family-generic-asian="system" __56:font-pitch-asian="variable" __56:font-size-asian="24pt" __56:font-weight-asian="bold" __56:font-name-complex="Liberation Serif1" __56:font-family-complex="&#39;Liberation Serif&#39;" __56:font-family-generic-complex="system" __56:font-pitch-complex="variable" __56:font-size-complex="24pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__59="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __59:name="Heading_20_2" __59:display-name="Heading 2" __59:family="paragraph" __59:parent-style-name="normal" __59:next-style-name="Standard" __59:default-outline-level="" __59:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__60="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __60:margin-top="0.25in" __60:margin-bottom="0.0555in" __59:contextual-spacing="false" __60:line-height="100%" __60:keep-together="always" __60:break-before="auto" __60:break-after="auto" __60:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__61="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __61:font-size="18pt" __61:font-weight="bold" __59:font-size-asian="18pt" __59:font-weight-asian="bold" __59:font-size-complex="18pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__62="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __62:name="Heading_20_3" __62:display-name="Heading 3" __62:family="paragraph" __62:parent-style-name="normal" __62:next-style-name="Standard" __62:default-outline-level="" __62:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__63="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __63:margin-top="0.0972in" __63:margin-bottom="0.0835in" __62:contextual-spacing="false" __63:line-height="100%" __63:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __62:font-name="Liberation Serif" xmlns:__64="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __64:font-family="&#39;Liberation Serif&#39;" __62:font-family-generic="roman" __62:font-pitch="variable" __64:font-size="14pt" __64:font-weight="bold" __62:font-name-asian="Liberation Serif1" __62:font-family-asian="&#39;Liberation Serif&#39;" __62:font-family-generic-asian="system" __62:font-pitch-asian="variable" __62:font-size-asian="14pt" __62:font-weight-asian="bold" __62:font-name-complex="Liberation Serif1" __62:font-family-complex="&#39;Liberation Serif&#39;" __62:font-family-generic-complex="system" __62:font-pitch-complex="variable" __62:font-size-complex="14pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__65="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __65:name="Heading_20_4" __65:display-name="Heading 4" __65:family="paragraph" __65:parent-style-name="normal" __65:next-style-name="Standard" __65:default-outline-level="" __65:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__66="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __66:margin-top="0.1665in" __66:margin-bottom="0.028in" __65:contextual-spacing="false" __66:line-height="100%" __66:keep-together="always" __66:break-before="auto" __66:break-after="auto" __66:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__67="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __67:font-size="12pt" __67:font-weight="bold" __65:font-size-asian="12pt" __65:font-weight-asian="bold" __65:font-size-complex="12pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__68="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __68:name="Heading_20_5" __68:display-name="Heading 5" __68:family="paragraph" __68:parent-style-name="normal" __68:next-style-name="Standard" __68:default-outline-level="" __68:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__69="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __69:margin-top="0.1528in" __69:margin-bottom="0.028in" __68:contextual-spacing="false" __69:line-height="100%" __69:keep-together="always" __69:break-before="auto" __69:break-after="auto" __69:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__70="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __70:font-size="11pt" __70:font-weight="bold" __68:font-size-asian="11pt" __68:font-weight-asian="bold" __68:font-size-complex="11pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__71="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __71:name="Heading_20_6" __71:display-name="Heading 6" __71:family="paragraph" __71:parent-style-name="normal" __71:next-style-name="Standard" __71:default-outline-level="" __71:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__72="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __72:margin-top="0.139in" __72:margin-bottom="0.028in" __71:contextual-spacing="false" __72:line-height="100%" __72:keep-together="always" __72:break-before="auto" __72:break-after="auto" __72:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__73="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __73:font-size="10pt" __73:font-weight="bold" __71:font-size-asian="10pt" __71:font-weight-asian="bold" __71:font-size-complex="10pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__74="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __74:name="Title" __74:family="paragraph" __74:parent-style-name="normal" __74:next-style-name="Standard" __74:default-outline-level="" __74:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__75="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __75:margin-top="0.1665in" __75:margin-bottom="0.0835in" __74:contextual-spacing="false" __75:line-height="100%" __75:text-align="center" __74:justify-single-word="false" __75:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __74:font-name="Liberation Sans" xmlns:__76="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __76:font-family="&#39;Liberation Sans&#39;" __74:font-family-generic="roman" __74:font-pitch="variable" __76:font-size="28pt" __76:font-weight="bold" __74:font-name-asian="Liberation Sans2" __74:font-family-asian="&#39;Liberation Sans&#39;" __74:font-family-generic-asian="system" __74:font-pitch-asian="variable" __74:font-size-asian="28pt" __74:font-weight-asian="bold" __74:font-name-complex="Liberation Sans2" __74:font-family-complex="&#39;Liberation Sans&#39;" __74:font-family-generic-complex="system" __74:font-pitch-complex="variable" __74:font-size-complex="28pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__77="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __77:name="Subtitle" __77:family="paragraph" __77:parent-style-name="normal" __77:next-style-name="Standard" __77:default-outline-level="" __77:class="chapter">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__78="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __78:margin-top="0.25in" __78:margin-bottom="0.0555in" __77:contextual-spacing="false" __78:line-height="100%" __78:keep-together="always" __78:break-before="auto" __78:break-after="auto" __78:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__79="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __79:color="#666666" xmlns:__80="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __80:opacity="100%" __77:font-name="Georgia" __79:font-family="Georgia" __77:font-family-generic="roman" __77:font-pitch="variable" __79:font-size="24pt" __79:font-style="italic" __77:font-name-asian="Georgia1" __77:font-family-asian="Georgia" __77:font-family-generic-asian="system" __77:font-pitch-asian="variable" __77:font-size-asian="24pt" __77:font-style-asian="italic" __77:font-name-complex="Georgia1" __77:font-family-complex="Georgia" __77:font-family-generic-complex="system" __77:font-pitch-complex="variable" __77:font-size-complex="24pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__81="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __81:name="Frame_20_contents" __81:display-name="Frame contents" __81:family="paragraph" __81:parent-style-name="Standard" __81:class="extra"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__82="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __82:name="Figure" __82:family="paragraph" __82:parent-style-name="Caption" __82:class="extra"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__83="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __83:name="Header_20_and_20_Footer" __83:display-name="Header and Footer" __83:family="paragraph" __83:parent-style-name="Standard" __83:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__84="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __84:number-lines="false" __84:line-number="0">
+        <tab-stops xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __83:position="3.4626in" __83:type="center"></tab-stop>
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __83:position="6.9252in" __83:type="right"></tab-stop>
+        </tab-stops>
+      </paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__85="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __85:name="Footer" __85:family="paragraph" __85:parent-style-name="Header_20_and_20_Footer" __85:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__86="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __86:number-lines="false" __86:line-number="0">
+        <tab-stops xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __85:position="3.4626in" __85:type="center"></tab-stop>
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __85:position="6.9252in" __85:type="right"></tab-stop>
+        </tab-stops>
+      </paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__87="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __87:name="Code" __87:display-name="Preformatted Text" __87:family="paragraph" __87:parent-style-name="Standard" __87:class="html">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__88="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __88:margin-top="0in" __88:margin-bottom="0in" __87:contextual-spacing="false"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __87:font-name="Liberation Mono" xmlns:__89="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __89:font-family="&#39;Liberation Mono&#39;" __87:font-family-generic="modern" __87:font-pitch="fixed" __89:font-size="10pt" __87:font-name-asian="Noto Sans Mono CJK SC" __87:font-family-asian="&#39;Noto Sans Mono CJK SC&#39;" __87:font-family-generic-asian="modern" __87:font-pitch-asian="fixed" __87:font-size-asian="10pt" __87:font-name-complex="Liberation Mono" __87:font-family-complex="&#39;Liberation Mono&#39;" __87:font-family-generic-complex="modern" __87:font-pitch-complex="fixed" __87:font-size-complex="10pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__90="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __90:name="Table_20_Contents" __90:display-name="Table Contents" __90:family="paragraph" __90:parent-style-name="Standard" __90:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__91="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __91:orphans="0" __91:widows="0" xmlns:__92="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __92:number-lines="false" __92:line-number="0"></paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__93="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __93:name="Body" __93:family="paragraph" __93:parent-style-name="Standard">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__94="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __94:margin-left="0in" __94:margin-right="0in" __94:margin-top="0in" __94:margin-bottom="0.0417in" __93:contextual-spacing="false" __93:line-height-at-least="0.1528in" __94:text-indent="0.25in" __93:auto-text-indent="false"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__95="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __95:color="#000000" xmlns:__96="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __96:opacity="100%" __93:font-name="Times New Roman" __95:font-family="&#39;Times New Roman&#39;" __93:font-family-generic="roman" __93:font-pitch="variable" __95:font-size="11pt" __93:font-size-asian="11pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__97="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __97:name="HC" __97:family="paragraph" __97:parent-style-name="Standard" __97:next-style-name="Body">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__98="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __98:margin-left="0in" __98:margin-right="0.6598in" __98:margin-top="0.472in" __98:margin-bottom="0.111in" __97:contextual-spacing="false" __98:text-indent="0in" __97:auto-text-indent="false" __98:padding-left="0in" __98:padding-right="0in" __98:padding-top="0.0138in" __98:padding-bottom="0in" __98:border-left="none" __98:border-right="none" __98:border-top="0.51pt solid #000000" __98:border-bottom="none" __98:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__99="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __99:color="#000000" xmlns:__100="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __100:opacity="100%" __99:font-size="14pt" __99:font-style="italic" __97:font-size-asian="14pt" __97:font-style-asian="italic"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__101="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __101:name="HD" __101:family="paragraph" __101:parent-style-name="Standard" __101:next-style-name="Body">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__102="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __102:margin-top="0.25in" __102:margin-bottom="0.0555in" __101:contextual-spacing="false" __101:line-height-at-least="0.2083in" __102:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__103="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __103:color="#000000" xmlns:__104="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __104:opacity="100%" __103:font-size="11pt" __103:font-weight="bold" __101:font-size-asian="11pt" __101:font-weight-asian="bold"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__105="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __105:name="FN" __105:family="paragraph" __105:parent-style-name="Standard" __105:next-style-name="FC">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__106="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __106:margin-top="0.0693in" __106:margin-bottom="0in" __105:contextual-spacing="false" __106:keep-with-next="always"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__107="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __107:color="#000000" xmlns:__108="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __108:opacity="100%" __105:font-name="Times New Roman" __107:font-family="&#39;Times New Roman&#39;" __105:font-family-generic="roman" __105:font-pitch="variable" __107:font-size="11pt" __107:font-weight="bold" __105:font-size-asian="11pt" __105:font-weight-asian="bold"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__109="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __109:name="FC" __109:family="paragraph" __109:parent-style-name="Standard" __109:next-style-name="Body">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__110="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __110:margin-top="0in" __110:margin-bottom="0.0835in" __109:contextual-spacing="false">
+        <tab-stops xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __109:position="0.5799in"></tab-stop>
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __109:position="0.8in"></tab-stop>
+        </tab-stops>
+      </paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__111="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __111:color="#000000" xmlns:__112="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __112:opacity="100%" __109:font-name="Times New Roman" __111:font-family="&#39;Times New Roman&#39;" __109:font-family-generic="roman" __109:font-pitch="variable" __111:font-size="11pt" __111:font-style="italic" __109:font-size-asian="11pt" __109:font-style-asian="italic"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__113="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __113:name="Horizontal_20_Line" __113:display-name="Horizontal Line" __113:family="paragraph" __113:parent-style-name="Standard" __113:next-style-name="Text_20_body" __113:class="html">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__114="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __114:margin-top="0in" __114:margin-bottom="0.1965in" __113:contextual-spacing="false" __113:border-line-width-bottom="0.0008in 0.0016in 0.0008in" __114:padding="0in" __114:border-left="none" __114:border-right="none" __114:border-top="none" __114:border-bottom="0.2pt double #808080" xmlns:__115="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __115:number-lines="false" __115:line-number="0" __113:join-border="false"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__116="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __116:font-size="6pt" __113:font-size-asian="6pt" __113:font-size-complex="6pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__117="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __117:name="Index_20_Heading" __117:display-name="Index Heading" __117:family="paragraph" __117:parent-style-name="Heading" __117:class="index">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__118="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __118:margin-left="0in" __118:text-indent="0in" __117:auto-text-indent="false" xmlns:__119="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __119:number-lines="false" __119:line-number="0"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__120="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __120:font-size="16pt" __120:font-weight="bold" __117:font-size-asian="16pt" __117:font-weight-asian="bold" __117:font-size-complex="16pt" __117:font-weight-complex="bold"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__121="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __121:name="Contents_20_Heading" __121:display-name="Contents Heading" __121:family="paragraph" __121:parent-style-name="Index_20_Heading" __121:class="index">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__122="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __122:margin-left="0in" __122:text-indent="0in" __121:auto-text-indent="false" xmlns:__123="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __123:number-lines="false" __123:line-number="0"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__124="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __124:font-size="16pt" __124:font-weight="bold" __121:font-size-asian="16pt" __121:font-weight-asian="bold" __121:font-size-complex="16pt" __121:font-weight-complex="bold"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__125="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __125:name="Table_20_Heading" __125:display-name="Table Heading" __125:family="paragraph" __125:parent-style-name="Table_20_Contents" __125:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__126="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __126:text-align="center" __125:justify-single-word="false" xmlns:__127="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __127:number-lines="false" __127:line-number="0"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__128="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __128:font-weight="bold" __125:font-weight-asian="bold" __125:font-weight-complex="bold"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__129="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __129:name="Table" __129:family="paragraph" __129:parent-style-name="Caption" __129:class="extra"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__130="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __130:name="Comment" __130:family="paragraph" __130:parent-style-name="Standard" __130:class="extra">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__131="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __131:font-size="10pt" __130:font-size-asian="10pt" __130:font-size-complex="10pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__132="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __132:name="Index_20_1" __132:display-name="Index 1" __132:family="paragraph" __132:parent-style-name="Index" __132:class="index">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__133="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __133:margin-left="0in" __133:text-indent="0in" __132:auto-text-indent="false"></paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__134="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __134:name="Drawing" __134:family="paragraph" __134:parent-style-name="Caption" __134:class="extra"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__135="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __135:name="Header" __135:family="paragraph" __135:parent-style-name="Header_20_and_20_Footer" __135:class="extra">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__136="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __136:number-lines="false" __136:line-number="0">
+        <tab-stops xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __135:position="3.4626in" __135:type="center"></tab-stop>
+          <tab-stop xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __135:position="6.9252in" __135:type="right"></tab-stop>
+        </tab-stops>
+      </paragraph-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__137="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __137:name="ListLabel_20_1" __137:display-name="ListLabel 1" __137:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __137:font-name="Liberation Serif" xmlns:__138="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __138:font-family="&#39;Liberation Serif&#39;" __137:font-family-generic="roman" __137:font-pitch="variable" __138:font-size="12pt" __137:text-underline-style="none" __138:font-weight="normal"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__139="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __139:name="ListLabel_20_2" __139:display-name="ListLabel 2" __139:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __139:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__140="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __140:name="ListLabel_20_3" __140:display-name="ListLabel 3" __140:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __140:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__141="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __141:name="ListLabel_20_4" __141:display-name="ListLabel 4" __141:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __141:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__142="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __142:name="ListLabel_20_5" __142:display-name="ListLabel 5" __142:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __142:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__143="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __143:name="ListLabel_20_6" __143:display-name="ListLabel 6" __143:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __143:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__144="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __144:name="ListLabel_20_7" __144:display-name="ListLabel 7" __144:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __144:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__145="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __145:name="ListLabel_20_8" __145:display-name="ListLabel 8" __145:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __145:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__146="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __146:name="ListLabel_20_9" __146:display-name="ListLabel 9" __146:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __146:text-underline-style="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__147="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __147:name="ListLabel_20_10" __147:display-name="ListLabel 10" __147:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__148="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __148:font-variant="normal" __148:text-transform="none" __148:color="#000080" xmlns:__149="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __149:opacity="100%" __147:text-line-through-style="none" __147:text-line-through-type="none" __147:text-position="0% 100%" __147:font-name="Liberation Serif" __148:font-family="&#39;Liberation Serif&#39;" __147:font-family-generic="roman" __147:font-pitch="variable" __148:font-size="12pt" __148:font-style="normal" __147:text-underline-style="solid" __147:text-underline-width="auto" __147:text-underline-color="font-color" __148:font-weight="normal" __147:font-name-asian="Liberation Serif1" __147:font-family-asian="&#39;Liberation Serif&#39;" __147:font-family-generic-asian="system" __147:font-pitch-asian="variable" __147:font-size-asian="12pt" __147:font-style-asian="normal" __147:font-weight-asian="normal" __147:font-name-complex="Liberation Serif1" __147:font-family-complex="&#39;Liberation Serif&#39;" __147:font-family-generic-complex="system" __147:font-pitch-complex="variable" __147:font-size-complex="12pt"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__150="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __150:name="Internet_20_link" __150:display-name="Internet link" __150:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__151="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __151:color="#000080" xmlns:__152="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __152:opacity="100%" __151:language="zxx" __151:country="none" __150:text-underline-style="solid" __150:text-underline-width="auto" __150:text-underline-color="font-color" __150:language-asian="zxx" __150:country-asian="none" __150:language-complex="zxx" __150:country-complex="none"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__153="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __153:name="Bullet_20_Symbols" __153:display-name="Bullet Symbols" __153:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __153:font-name="OpenSymbol" xmlns:__154="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __154:font-family="OpenSymbol" __153:font-charset="x-symbol" __153:font-name-asian="OpenSymbol" __153:font-family-asian="OpenSymbol" __153:font-charset-asian="x-symbol" __153:font-name-complex="OpenSymbol" __153:font-family-complex="OpenSymbol" __153:font-charset-complex="x-symbol"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__155="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __155:name="Numbering_20_Symbols" __155:display-name="Numbering Symbols" __155:family="text"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__156="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __156:name="Line_20_numbering" __156:display-name="Line numbering" __156:family="text"></style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__157="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __157:name="Graphics" __157:family="graphic">
+      <graphic-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__158="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __158:anchor-type="paragraph" xmlns:__159="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __159:x="0in" __159:y="0in" __157:wrap="dynamic" __157:number-wrapped-paragraphs="no-limit" __157:wrap-contour="false" __157:vertical-pos="top" __157:vertical-rel="paragraph" __157:horizontal-pos="center" __157:horizontal-rel="paragraph" xmlns:__160="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __160:background-color="transparent" xmlns:__161="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __161:fill="none" __161:fill-color="#729fcf"></graphic-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__162="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __162:name="Frame" __162:family="graphic">
+      <graphic-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__163="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __163:anchor-type="paragraph" xmlns:__164="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __164:x="0in" __164:y="0in" xmlns:__165="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __165:margin-left="0.0791in" __165:margin-right="0.0791in" __165:margin-top="0.0791in" __165:margin-bottom="0.0791in" __162:wrap="parallel" __162:number-wrapped-paragraphs="no-limit" __162:wrap-contour="false" __162:vertical-pos="top" __162:vertical-rel="paragraph-content" __162:horizontal-pos="center" __162:horizontal-rel="paragraph-content" __165:background-color="transparent" xmlns:__166="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __166:fill="none" __166:fill-color="#729fcf" __165:padding="0.0591in" __165:border="0.06pt solid #000000"></graphic-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__167="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __167:name="OLE" __167:family="graphic">
+      <graphic-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__168="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __168:anchor-type="paragraph" xmlns:__169="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" __169:x="0in" __169:y="0in" __167:wrap="dynamic" __167:number-wrapped-paragraphs="no-limit" __167:wrap-contour="false" __167:vertical-pos="top" __167:vertical-rel="paragraph" __167:horizontal-pos="center" __167:horizontal-rel="paragraph" xmlns:__170="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __170:background-color="transparent" xmlns:__171="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __171:fill="none" __171:fill-color="#729fcf"></graphic-properties>
+    </style>
+    <outline-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__172="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __172:name="Outline">
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__173="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __173:level="1" xmlns:__174="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __174:num-list-format="%1%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __173:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __173:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__175="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __175:level="2" xmlns:__176="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __176:num-list-format="%2%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __175:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __175:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__177="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __177:level="3" xmlns:__178="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __178:num-list-format="%3%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __177:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __177:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__179="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __179:level="4" xmlns:__180="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __180:num-list-format="%4%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __179:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __179:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__181="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __181:level="5" xmlns:__182="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __182:num-list-format="%5%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __181:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __181:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__183="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __183:level="6" xmlns:__184="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __184:num-list-format="%6%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __183:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __183:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__185="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __185:level="7" xmlns:__186="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __186:num-list-format="%7%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __185:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __185:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__187="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __187:level="8" xmlns:__188="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __188:num-list-format="%8%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __187:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __187:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__189="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __189:level="9" xmlns:__190="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __190:num-list-format="%9%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __189:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __189:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+      <outline-level-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__191="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __191:level="10" xmlns:__192="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __192:num-list-format="%10%" __172:num-format="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __191:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __191:label-followed-by="listtab"></list-level-label-alignment>
+        </list-level-properties>
+      </outline-level-style>
+    </outline-style>
+    <list-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__193="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __193:name="WWNum1">
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__194="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __194:level="1" xmlns:__195="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __195:num-list-format="%1%" __193:num-suffix="" __194:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __194:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __194:label-followed-by="listtab" xmlns:__196="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __196:text-indent="-0.25in" __196:margin-left="0.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__197="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __197:level="2" xmlns:__198="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __198:num-list-format="%2%◦" __193:num-suffix="◦" __197:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __197:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __197:label-followed-by="listtab" xmlns:__199="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __199:text-indent="-0.25in" __199:margin-left="0.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__200="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __200:level="3" xmlns:__201="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __201:num-list-format="%3%▪" __193:num-suffix="▪" __200:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __200:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __200:label-followed-by="listtab" xmlns:__202="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __202:text-indent="-0.25in" __202:margin-left="1in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__203="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __203:level="4" xmlns:__204="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __204:num-list-format="%4%" __193:num-suffix="" __203:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __203:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __203:label-followed-by="listtab" xmlns:__205="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __205:text-indent="-0.25in" __205:margin-left="1.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__206="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __206:level="5" xmlns:__207="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __207:num-list-format="%5%◦" __193:num-suffix="◦" __206:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __206:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __206:label-followed-by="listtab" xmlns:__208="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __208:text-indent="-0.25in" __208:margin-left="1.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__209="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __209:level="6" xmlns:__210="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __210:num-list-format="%6%▪" __193:num-suffix="▪" __209:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __209:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __209:label-followed-by="listtab" xmlns:__211="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __211:text-indent="-0.25in" __211:margin-left="1.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__212="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __212:level="7" xmlns:__213="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __213:num-list-format="%7%" __193:num-suffix="" __212:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __212:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __212:label-followed-by="listtab" xmlns:__214="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __214:text-indent="-0.25in" __214:margin-left="2in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__215="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __215:level="8" xmlns:__216="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __216:num-list-format="%8%◦" __193:num-suffix="◦" __215:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __215:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __215:label-followed-by="listtab" xmlns:__217="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __217:text-indent="-0.25in" __217:margin-left="2.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__218="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __218:level="9" xmlns:__219="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __219:num-list-format="%9%▪" __193:num-suffix="▪" __218:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __218:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __218:label-followed-by="listtab" xmlns:__220="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __220:text-indent="-0.25in" __220:margin-left="2.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__221="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __221:level="10" xmlns:__222="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __222:num-list-format="%10%." __193:num-suffix="." __193:num-format="1">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __221:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __221:label-followed-by="listtab" __221:list-tab-stop-position="2.75in" xmlns:__223="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __223:text-indent="-0.25in" __223:margin-left="2.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-number>
+    </list-style>
+    <list-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__224="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __224:name="WWNum2">
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__225="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __225:level="1" __225:style-name="ListLabel_20_1" xmlns:__226="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __226:num-list-format="%1%●" __224:num-suffix="●" __225:bullet-char="●">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __225:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __225:label-followed-by="listtab" xmlns:__227="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __227:text-indent="-0.25in" __227:margin-left="0.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__228="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __228:level="2" __228:style-name="ListLabel_20_2" xmlns:__229="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __229:num-list-format="%2%○" __224:num-suffix="○" __228:bullet-char="○">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __228:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __228:label-followed-by="listtab" xmlns:__230="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __230:text-indent="-0.25in" __230:margin-left="1in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__231="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __231:level="3" __231:style-name="ListLabel_20_3" xmlns:__232="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __232:num-list-format="%3%■" __224:num-suffix="■" __231:bullet-char="■">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __231:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __231:label-followed-by="listtab" xmlns:__233="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __233:text-indent="-0.25in" __233:margin-left="1.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__234="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __234:level="4" __234:style-name="ListLabel_20_4" xmlns:__235="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __235:num-list-format="%4%●" __224:num-suffix="●" __234:bullet-char="●">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __234:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __234:label-followed-by="listtab" xmlns:__236="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __236:text-indent="-0.25in" __236:margin-left="2in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__237="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __237:level="5" __237:style-name="ListLabel_20_5" xmlns:__238="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __238:num-list-format="%5%○" __224:num-suffix="○" __237:bullet-char="○">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __237:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __237:label-followed-by="listtab" xmlns:__239="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __239:text-indent="-0.25in" __239:margin-left="2.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__240="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __240:level="6" __240:style-name="ListLabel_20_6" xmlns:__241="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __241:num-list-format="%6%■" __224:num-suffix="■" __240:bullet-char="■">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __240:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __240:label-followed-by="listtab" xmlns:__242="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __242:text-indent="-0.25in" __242:margin-left="3in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__243="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __243:level="7" __243:style-name="ListLabel_20_7" xmlns:__244="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __244:num-list-format="%7%●" __224:num-suffix="●" __243:bullet-char="●">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __243:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __243:label-followed-by="listtab" xmlns:__245="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __245:text-indent="-0.25in" __245:margin-left="3.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__246="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __246:level="8" __246:style-name="ListLabel_20_8" xmlns:__247="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __247:num-list-format="%8%○" __224:num-suffix="○" __246:bullet-char="○">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __246:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __246:label-followed-by="listtab" xmlns:__248="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __248:text-indent="-0.25in" __248:margin-left="4in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__249="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __249:level="9" __249:style-name="ListLabel_20_9" xmlns:__250="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __250:num-list-format="%9%■" __224:num-suffix="■" __249:bullet-char="■">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __249:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __249:label-followed-by="listtab" xmlns:__251="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __251:text-indent="-0.25in" __251:margin-left="4.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__252="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __252:level="10" xmlns:__253="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __253:num-list-format="%10%." __224:num-suffix="." __224:num-format="1">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __252:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __252:label-followed-by="listtab" __252:list-tab-stop-position="2.75in" xmlns:__254="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __254:text-indent="-0.25in" __254:margin-left="2.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-number>
+    </list-style>
+    <list-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__255="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __255:name="WWNum3">
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__256="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __256:level="1" xmlns:__257="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __257:num-list-format="%1%" __255:num-suffix="" __256:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __256:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __256:label-followed-by="listtab" xmlns:__258="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __258:text-indent="-0.25in" __258:margin-left="0.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__259="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __259:level="2" xmlns:__260="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __260:num-list-format="%2%◦" __255:num-suffix="◦" __259:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __259:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __259:label-followed-by="listtab" xmlns:__261="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __261:text-indent="-0.25in" __261:margin-left="0.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__262="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __262:level="3" xmlns:__263="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __263:num-list-format="%3%▪" __255:num-suffix="▪" __262:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __262:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __262:label-followed-by="listtab" xmlns:__264="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __264:text-indent="-0.25in" __264:margin-left="1in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__265="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __265:level="4" xmlns:__266="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __266:num-list-format="%4%" __255:num-suffix="" __265:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __265:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __265:label-followed-by="listtab" xmlns:__267="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __267:text-indent="-0.25in" __267:margin-left="1.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__268="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __268:level="5" xmlns:__269="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __269:num-list-format="%5%◦" __255:num-suffix="◦" __268:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __268:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __268:label-followed-by="listtab" xmlns:__270="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __270:text-indent="-0.25in" __270:margin-left="1.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__271="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __271:level="6" xmlns:__272="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __272:num-list-format="%6%▪" __255:num-suffix="▪" __271:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __271:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __271:label-followed-by="listtab" xmlns:__273="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __273:text-indent="-0.25in" __273:margin-left="1.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__274="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __274:level="7" xmlns:__275="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __275:num-list-format="%7%" __255:num-suffix="" __274:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __274:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __274:label-followed-by="listtab" xmlns:__276="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __276:text-indent="-0.25in" __276:margin-left="2in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__277="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __277:level="8" xmlns:__278="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __278:num-list-format="%8%◦" __255:num-suffix="◦" __277:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __277:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __277:label-followed-by="listtab" xmlns:__279="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __279:text-indent="-0.25in" __279:margin-left="2.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__280="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __280:level="9" xmlns:__281="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __281:num-list-format="%9%▪" __255:num-suffix="▪" __280:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __280:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __280:label-followed-by="listtab" xmlns:__282="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __282:text-indent="-0.25in" __282:margin-left="2.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__283="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __283:level="10" xmlns:__284="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __284:num-list-format="%10%." __255:num-suffix="." __255:num-format="1">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __283:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __283:label-followed-by="listtab" __283:list-tab-stop-position="2.75in" xmlns:__285="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __285:text-indent="-0.25in" __285:margin-left="2.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-number>
+    </list-style>
+    <list-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__286="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __286:name="WWNum4">
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__287="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __287:level="1" xmlns:__288="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __288:num-list-format="%1%" __286:num-suffix="" __287:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __287:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __287:label-followed-by="listtab" xmlns:__289="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __289:text-indent="-0.25in" __289:margin-left="0.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__290="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __290:level="2" xmlns:__291="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __291:num-list-format="%2%◦" __286:num-suffix="◦" __290:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __290:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __290:label-followed-by="listtab" xmlns:__292="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __292:text-indent="-0.25in" __292:margin-left="0.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__293="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __293:level="3" xmlns:__294="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __294:num-list-format="%3%▪" __286:num-suffix="▪" __293:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __293:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __293:label-followed-by="listtab" xmlns:__295="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __295:text-indent="-0.25in" __295:margin-left="1in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__296="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __296:level="4" xmlns:__297="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __297:num-list-format="%4%" __286:num-suffix="" __296:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __296:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __296:label-followed-by="listtab" xmlns:__298="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __298:text-indent="-0.25in" __298:margin-left="1.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__299="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __299:level="5" xmlns:__300="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __300:num-list-format="%5%◦" __286:num-suffix="◦" __299:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __299:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __299:label-followed-by="listtab" xmlns:__301="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __301:text-indent="-0.25in" __301:margin-left="1.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__302="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __302:level="6" xmlns:__303="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __303:num-list-format="%6%▪" __286:num-suffix="▪" __302:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __302:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __302:label-followed-by="listtab" xmlns:__304="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __304:text-indent="-0.25in" __304:margin-left="1.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__305="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __305:level="7" xmlns:__306="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __306:num-list-format="%7%" __286:num-suffix="" __305:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __305:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __305:label-followed-by="listtab" xmlns:__307="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __307:text-indent="-0.25in" __307:margin-left="2in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__308="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __308:level="8" xmlns:__309="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __309:num-list-format="%8%◦" __286:num-suffix="◦" __308:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __308:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __308:label-followed-by="listtab" xmlns:__310="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __310:text-indent="-0.25in" __310:margin-left="2.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__311="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __311:level="9" xmlns:__312="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __312:num-list-format="%9%▪" __286:num-suffix="▪" __311:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __311:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __311:label-followed-by="listtab" xmlns:__313="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __313:text-indent="-0.25in" __313:margin-left="2.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__314="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __314:level="10" xmlns:__315="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __315:num-list-format="%10%." __286:num-suffix="." __286:num-format="1">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __314:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __314:label-followed-by="listtab" __314:list-tab-stop-position="2.75in" xmlns:__316="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __316:text-indent="-0.25in" __316:margin-left="2.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-number>
+    </list-style>
+    <list-style xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__317="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __317:name="WWNum5">
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__318="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __318:level="1" xmlns:__319="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __319:num-list-format="%1%" __317:num-suffix="" __318:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __318:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __318:label-followed-by="listtab" xmlns:__320="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __320:text-indent="-0.25in" __320:margin-left="0.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__321="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __321:level="2" xmlns:__322="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __322:num-list-format="%2%◦" __317:num-suffix="◦" __321:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __321:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __321:label-followed-by="listtab" xmlns:__323="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __323:text-indent="-0.25in" __323:margin-left="0.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__324="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __324:level="3" xmlns:__325="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __325:num-list-format="%3%▪" __317:num-suffix="▪" __324:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __324:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __324:label-followed-by="listtab" xmlns:__326="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __326:text-indent="-0.25in" __326:margin-left="1in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__327="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __327:level="4" xmlns:__328="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __328:num-list-format="%4%" __317:num-suffix="" __327:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __327:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __327:label-followed-by="listtab" xmlns:__329="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __329:text-indent="-0.25in" __329:margin-left="1.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__330="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __330:level="5" xmlns:__331="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __331:num-list-format="%5%◦" __317:num-suffix="◦" __330:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __330:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __330:label-followed-by="listtab" xmlns:__332="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __332:text-indent="-0.25in" __332:margin-left="1.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__333="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __333:level="6" xmlns:__334="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __334:num-list-format="%6%▪" __317:num-suffix="▪" __333:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __333:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __333:label-followed-by="listtab" xmlns:__335="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __335:text-indent="-0.25in" __335:margin-left="1.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__336="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __336:level="7" xmlns:__337="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __337:num-list-format="%7%" __317:num-suffix="" __336:bullet-char="">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __336:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __336:label-followed-by="listtab" xmlns:__338="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __338:text-indent="-0.25in" __338:margin-left="2in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__339="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __339:level="8" xmlns:__340="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __340:num-list-format="%8%◦" __317:num-suffix="◦" __339:bullet-char="◦">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __339:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __339:label-followed-by="listtab" xmlns:__341="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __341:text-indent="-0.25in" __341:margin-left="2.25in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-bullet xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__342="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __342:level="9" xmlns:__343="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __343:num-list-format="%9%▪" __317:num-suffix="▪" __342:bullet-char="▪">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __342:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __342:label-followed-by="listtab" xmlns:__344="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __344:text-indent="-0.25in" __344:margin-left="2.5in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-bullet>
+      <list-level-style-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__345="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __345:level="10" xmlns:__346="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __346:num-list-format="%10%." __317:num-suffix="." __317:num-format="1">
+        <list-level-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __345:list-level-position-and-space-mode="label-alignment">
+          <list-level-label-alignment xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __345:label-followed-by="listtab" __345:list-tab-stop-position="2.75in" xmlns:__347="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __347:text-indent="-0.25in" __347:margin-left="2.75in"></list-level-label-alignment>
+        </list-level-properties>
+      </list-level-style-number>
+    </list-style>
+    <notes-configuration xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__348="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __348:note-class="footnote" xmlns:__349="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __349:num-format="1" __348:start-value="0" __348:footnotes-position="page" __348:start-numbering-at="document"></notes-configuration>
+    <notes-configuration xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__350="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __350:note-class="endnote" xmlns:__351="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __351:num-format="i" __350:start-value="0"></notes-configuration>
+    <linenumbering-configuration xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__352="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __352:style-name="Line_20_numbering" __352:offset="0.2in" xmlns:__353="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __353:num-format="1" __352:number-position="left" __352:increment="5"></linenumbering-configuration>
+    <number-style xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:__354="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __354:name="N117">
+      <number xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:__355="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" __355:decimal-places="4" __355:min-decimal-places="4" __355:min-integer-digits="1"></number>
+    </number-style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__356="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __356:name="Default_20_Style.1" __356:display-name="Default Style.1" __356:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__357="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __357:border-left="0.51pt solid #000000" __357:border-top="0.51pt solid #000000" __357:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__358="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __358:name="Default_20_Style.2" __358:display-name="Default Style.2" __358:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__359="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __359:border-left="0.51pt solid #000000" __359:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__360="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __360:name="Default_20_Style.3" __360:display-name="Default Style.3" __360:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__361="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __361:border-left="0.51pt solid #000000" __361:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__362="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __362:name="Default_20_Style.4" __362:display-name="Default Style.4" __362:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__363="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __363:border-left="0.51pt solid #000000" __363:border-right="0.51pt solid #000000" __363:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__364="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __364:name="Default_20_Style.5" __364:display-name="Default Style.5" __364:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__365="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __365:border-left="0.51pt solid #000000" __365:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__366="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __366:name="Default_20_Style.6" __366:display-name="Default Style.6" __366:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__367="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __367:border-left="0.51pt solid #000000" __367:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__368="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __368:name="Default_20_Style.7" __368:display-name="Default Style.7" __368:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__369="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __369:border-left="0.51pt solid #000000" __369:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__370="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __370:name="Default_20_Style.8" __370:display-name="Default Style.8" __370:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__371="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __371:border-left="0.51pt solid #000000" __371:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__372="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __372:name="Default_20_Style.9" __372:display-name="Default Style.9" __372:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__373="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __373:border-left="0.51pt solid #000000" __373:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__374="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __374:name="Default_20_Style.10" __374:display-name="Default Style.10" __374:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__375="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __375:border-left="0.51pt solid #000000" __375:border-right="0.51pt solid #000000" __375:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__376="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __376:name="Default_20_Style.11" __376:display-name="Default Style.11" __376:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__377="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __377:border-left="0.51pt solid #000000" __377:border-top="0.51pt solid #000000" __377:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__378="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __378:name="Default_20_Style.12" __378:display-name="Default Style.12" __378:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__379="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __379:border-left="0.51pt solid #000000" __379:border-right="0.51pt solid #000000" __379:border-top="0.51pt solid #000000" __379:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__380="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __380:name="Default_20_Style.13" __380:display-name="Default Style.13" __380:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__381="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __381:border-left="0.51pt solid #000000" __381:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__382="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __382:name="Default_20_Style.14" __382:display-name="Default Style.14" __382:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__383="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __383:border-left="0.51pt solid #000000" __383:border-right="0.51pt solid #000000" __383:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__384="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __384:name="Default_20_Style.15" __384:display-name="Default Style.15" __384:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__385="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __385:border-left="0.51pt solid #000000" __385:border-top="0.51pt solid #000000" __385:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__386="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __386:name="Default_20_Style.16" __386:display-name="Default Style.16" __386:family="table-cell">
+      <table-cell-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__387="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __387:border-left="0.51pt solid #000000" __387:border-bottom="0.51pt solid #000000"></table-cell-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></text-properties>
+    </style>
+    <table-template xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:__388="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:name="Default Style" __388:first-row-end-column="row" __388:first-row-start-column="row" __388:last-row-end-column="row" __388:last-row-start-column="row">
+      <first-row xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.1"></first-row>
+      <last-row xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.2"></last-row>
+      <first-column xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.3"></first-column>
+      <last-column xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.4"></last-column>
+      <body xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.9"></body>
+      <even-rows xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.5"></even-rows>
+      <odd-rows xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.6"></odd-rows>
+      <even-columns xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.7"></even-columns>
+      <odd-columns xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.8"></odd-columns>
+      <background xmlns="urn:oasis:names:tc:opendocument:xmlns:table:1.0" __388:style-name="Default_20_Style.10"></background>
+      <first-row-even-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.15"></first-row-even-column>
+      <last-row-even-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.16"></last-row-even-column>
+      <first-row-end-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.12"></first-row-end-column>
+      <first-row-start-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.11"></first-row-start-column>
+      <last-row-end-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.14"></last-row-end-column>
+      <last-row-start-column xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __388:style-name="Default_20_Style.13"></last-row-start-column>
+    </table-template>
+    <default-page-layout xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+      <page-layout-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__389="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __389:writing-mode="lr-tb" __389:layout-grid-standard-mode="true"></page-layout-properties>
+    </default-page-layout>
+    <theme xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:__390="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="Office">
+      <theme-colors xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="LibreOffice">
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="dark1" __390:color="#000000"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="light1" __390:color="#ffffff"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="dark2" __390:color="#000000"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="light2" __390:color="#ffffff"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent1" __390:color="#18a303"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent2" __390:color="#0369a3"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent3" __390:color="#a33e03"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent4" __390:color="#8e03a3"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent5" __390:color="#c99c00"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="accent6" __390:color="#c9211e"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="hyperlink" __390:color="#0000ee"></color>
+        <color xmlns="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __390:name="followed-hyperlink" __390:color="#551a8b"></color>
+      </theme-colors>
+    </theme>
+  </styles>
+  <automatic-styles xmlns="urn:oasis:names:tc:opendocument:xmlns:office:1.0">
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__391="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __391:name="MP1" __391:family="paragraph" __391:parent-style-name="Footer">
+      <paragraph-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__392="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __392:text-align="center" __391:justify-single-word="false"></paragraph-properties>
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__393="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __393:language="en" __393:country="US"></text-properties>
+    </style>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__394="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __394:name="MT1" __394:family="text">
+      <text-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:office="http://openoffice.org/2009/office" office:rsid="009a1922"></text-properties>
+    </style>
+    <page-layout xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__395="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __395:name="Mpm1">
+      <page-layout-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__396="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __396:page-width="8.5in" __396:page-height="11in" __395:num-format="1" __395:print-orientation="portrait" __396:margin-top="0.7874in" __396:margin-bottom="0.7874in" __396:margin-left="0.7874in" __396:margin-right="0.7874in" __396:border="none" __396:padding="0.0201in" __395:writing-mode="lr-tb" __395:layout-grid-color="#c0c0c0" __395:layout-grid-lines="23940" __395:layout-grid-base-height="0.0693in" __395:layout-grid-ruby-height="0in" __395:layout-grid-mode="none" __395:layout-grid-ruby-below="false" __395:layout-grid-print="false" __395:layout-grid-display="false" __395:layout-grid-base-width="0.1665in" __395:layout-grid-snap-to="true" __395:footnote-max-height="0in" xmlns:__397="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" __397:margin-gutter="0in">
+        <columns xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __396:column-count="1" __396:column-gap="0in"></columns>
+        <footnote-sep xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __395:width="0.0071in" __395:distance-before-sep="0.0402in" __395:distance-after-sep="0.0402in" __395:line-style="solid" __395:adjustment="left" __395:rel-width="25%" __395:color="#000000"></footnote-sep>
+      </page-layout-properties>
+      <header-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0"></header-style>
+      <footer-style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+        <header-footer-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__398="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" __398:min-height="0.2402in" __398:margin-left="0in" __398:margin-right="0in" __398:margin-top="0.2in" __398:background-color="transparent" __395:dynamic-spacing="false" xmlns:__399="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __399:fill="none" __399:fill-color="#729fcf"></header-footer-properties>
+      </footer-style>
+    </page-layout>
+    <style xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__400="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __400:name="Mdp1" __400:family="drawing-page">
+      <drawing-page-properties xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__401="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __401:background-size="full"></drawing-page-properties>
+    </style>
+    <date-style xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:__402="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __402:name="N37" xmlns:__403="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" __403:automatic-order="true">
+      <year xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0"></year>
+      <text xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0">-</text>
+      <month xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" __403:style="long"></month>
+      <text xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0">-</text>
+      <day xmlns="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" __403:style="long"></day>
+    </date-style>
+  </automatic-styles>
+  <master-styles xmlns="urn:oasis:names:tc:opendocument:xmlns:office:1.0">
+    <master-page xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:__404="urn:oasis:names:tc:opendocument:xmlns:style:1.0" __404:name="Standard" __404:page-layout-name="Mpm1" xmlns:__405="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" __405:style-name="Mdp1">
+      <footer xmlns="urn:oasis:names:tc:opendocument:xmlns:style:1.0">
+        <p xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:__406="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __406:style-name="MP1">
+          <page-number xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __406:select-page="current">15</page-number>
+          <s xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0"></s>
+          <span xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __406:style-name="MT1">printed on</span>
+          <span xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __406:style-name="MT1">
+            <date xmlns="urn:oasis:names:tc:opendocument:xmlns:text:1.0" __404:data-style-name="N37" __406:date-value="2025-06-21T11:51:02.140231928">
+                            06/21/25
+                        </date>
+          </span>
+        </p>
+      </footer>
+    </master-page>
+  </master-styles>
+</document-styles>
